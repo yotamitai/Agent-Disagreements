@@ -194,13 +194,13 @@ def save_disagreements(a1_DAs, a2_DAs, output_dir, fps):
 
         """up to disagreement"""
         create_video('together' + str(hl_i), highlight_frames_dir, dir, "a1_DA" + str(hl_i), size,
-                     da_idx, fps, add_pause=[0, 4])
+                     da_idx, fps, add_pause=[0,0])
         """from disagreement"""
         name1, name2 = "a1_DA" + str(hl_i), "a2_DA" + str(hl_i)
         create_video(name1, highlight_frames_dir, dir, name1, size,
-                     trajectory_length, fps, start=da_idx, add_pause=[7, 0])
+                     trajectory_length, fps, start=da_idx, add_pause=[0, 0])
         create_video(name2, highlight_frames_dir, dir, name2, size,
-                     trajectory_length, fps, start=da_idx, add_pause=[7, 0])
+                     trajectory_length, fps, start=da_idx, add_pause=[0, 0])
     return video_dir
 
 
