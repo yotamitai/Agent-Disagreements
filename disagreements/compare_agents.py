@@ -48,6 +48,7 @@ def online_comparison(args):
 
         # for _ in range(20):  # TODO remove
         while not done:
+
             """check for disagreement"""
             if a1_a != a2_a:
                 log(f'\tDisagreement at step {t}', args.verbose)
